@@ -1,0 +1,12 @@
+{
+  "platforms": ["ios", "tvos", "android", "web"],
+  "ios": {
+    "modules": ["PreventRecentScreenshotsModule"],
+    "appDelegateSubscribers": ["AppLifecycleDelegate"]
+  },
+  "android": {
+    "modules": [
+      "expo.modules.preventrecentscreenshots.PreventRecentScreenshotsModule"
+    ]
+  }
+}
