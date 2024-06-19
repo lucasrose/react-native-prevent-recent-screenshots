@@ -1,5 +1,5 @@
 {
-  "name": "prevent-recent-screenshots",
+  "name": "react-native-prevent-recent-screenshots",
   "version": "0.1.0",
   "description": "Prevents recent screenshots when app is backgrounded",
   "main": "build/index.js",
@@ -18,16 +18,16 @@
   "keywords": [
     "react-native",
     "expo",
-    "prevent-recent-screenshots",
+    "react-native-prevent-recent-screenshots",
     "PreventRecentScreenshots"
   ],
-  "repository": "https://github.com/lucasrose/prevent-recent-screenshots",
+  "repository": "https://github.com/lucasrose/react-native-prevent-recent-screenshots",
   "bugs": {
-    "url": "https://github.com/lucasrose/prevent-recent-screenshots/issues"
+    "url": "https://github.com/lucasrose/react-native-prevent-recent-screenshots/issues"
   },
   "author": "Lucas Rose <lucas@dinewise.com> (https://github.com/lucasrose)",
   "license": "MIT",
-  "homepage": "https://github.com/lucasrose/prevent-recent-screenshots#readme",
+  "homepage": "https://github.com/lucasrose/react-native-prevent-recent-screenshots#readme",
   "dependencies": {},
   "devDependencies": {
     "@types/react": "^18.0.25",
