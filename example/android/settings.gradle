@@ -1,4 +1,4 @@
-rootProject.name = 'prevent-recent-screenshots-example'
+rootProject.name = 'react-native-prevent-recent-screenshots-example'
 
 dependencyResolutionManagement {
   versionCatalogs {

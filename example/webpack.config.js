@@ -1,19 +1,21 @@
-const createConfigAsync = require('@expo/webpack-config');
-const path = require('path');
+const createConfigAsync = require("@expo/webpack-config");
+const path = require("path");
 
 module.exports = async (env, argv) => {
   const config = await createConfigAsync(
     {
       ...env,
       babel: {
-        dangerouslyAddModulePathsToTranspile: ['prevent-recent-screenshots'],
+        dangerouslyAddModulePathsToTranspile: [
+          "react-native-prevent-recent-screenshots",
+        ],
       },
     },
     argv
   );
   config.resolve.modules = [
-    path.resolve(__dirname, './node_modules'),
-    path.resolve(__dirname, '../node_modules'),
+    path.resolve(__dirname, "./node_modules"),
+    path.resolve(__dirname, "../node_modules"),
   ];
 
   return config;

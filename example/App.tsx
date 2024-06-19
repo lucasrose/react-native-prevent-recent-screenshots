@@ -1,5 +1,5 @@
 import { Button, Platform, StyleSheet, Text, View } from "react-native";
-import PreventRecentScreenshots from "prevent-recent-screenshots";
+import PreventRecentScreenshots from "react-native-prevent-recent-screenshots";
 
 export default function App() {
   return (

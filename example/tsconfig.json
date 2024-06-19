@@ -3,8 +3,8 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "prevent-recent-screenshots": ["../src/index"],
-      "prevent-recent-screenshots/*": ["../src/*"]
+      "react-native-prevent-recent-screenshots": ["../src/index"],
+      "react-native-prevent-recent-screenshots/*": ["../src/*"]
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "prevent-recent-screenshots-example",
-    "slug": "prevent-recent-screenshots-example",
+    "name": "react-native-prevent-recent-screenshots-example",
+    "slug": "react-native-prevent-recent-screenshots-example",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
