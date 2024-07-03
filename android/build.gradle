@@ -38,6 +38,8 @@ android {
   defaultConfig {
     versionCode 1
     versionName "0.1.0"
+
+    buildConfigField("boolean", "RN_PREVENT_RECENT_SCREENSHOTS", safeExtGet("RN_PREVENT_RECENT_SCREENSHOTS", "false"))
   }
   lintOptions {
     abortOnError false

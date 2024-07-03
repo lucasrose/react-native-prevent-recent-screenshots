@@ -7,5 +7,21 @@ This is an expo module which will prevent screenshots being taken when the appli
 2. Run expo prebuild `npx expo prebuild`
 
 ### Usage
-- Android: import `import "react-native-prevent-recent-screenshots"`
+- Add the plugin to your app config. These are defaulted to false.
+```typescript
+[
+  'react-native-prevent-recent-screenshots',
+  {
+    ios: {
+      enabled?: boolean
+    },
+    android?: {
+      enabled?: boolean
+    },
+  },
+],
+```
+
+To programatically configure hiding the splashscreen on iOS:
+
 - iOS, import `import PreventRecentScreenshots from "react-native-prevent-recent-screenshots";`, call `shouldPreventRecentScreenshot(true | false)` whenever this functionality needs to be disabled. The default behavior is set to true.

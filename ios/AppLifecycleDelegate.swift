@@ -4,7 +4,6 @@ public class AppLifecycleDelegate: ExpoAppDelegateSubscriber {
   private var splashScreenViewController: UIViewController?
   private var canShowSplashScreen = true
 
-    
   public func applicationDidBecomeActive(_ application: UIApplication) {
     // The app has become active.
     splashScreenViewController?.dismiss(animated: false) {
@@ -13,7 +12,11 @@ public class AppLifecycleDelegate: ExpoAppDelegateSubscriber {
   }
 
   public func applicationWillResignActive(_ application: UIApplication) {
-      if splashScreenContext.getPreventRecentScreenshot() {
+    if(!isEnabled()) {
+      return
+    }
+
+    if splashScreenContext.getPreventRecentScreenshot() {
       if let launchScreen = UIStoryboard(name: "SplashScreen", bundle: nil).instantiateInitialViewController() {
         launchScreen.modalPresentationStyle = .overFullScreen
         getTopViewController().present(launchScreen, animated: false)
@@ -33,6 +36,13 @@ public class AppLifecycleDelegate: ExpoAppDelegateSubscriber {
   public func applicationWillTerminate(_ application: UIApplication) {
     // The app is about to terminate.
   }
+}
+
+func isEnabled() -> Bool {
+  if let value = Bundle.main.object(forInfoDictionaryKey: "RN_PREVENT_RECENT_SCREENSHOTS") as? Bool {
+    return value
+  }
+  return false
 }
 
 func getTopViewController() -> UIViewController {    
