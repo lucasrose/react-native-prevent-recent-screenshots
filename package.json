@@ -1,6 +1,6 @@
 {
   "name": "react-native-prevent-recent-screenshots",
-  "version": "1.0.2",
+  "version": "1.2.0",
   "description": "Prevents recent screenshots when app is backgrounded",
   "main": "build/index.js",
   "types": "build/index.d.ts",
